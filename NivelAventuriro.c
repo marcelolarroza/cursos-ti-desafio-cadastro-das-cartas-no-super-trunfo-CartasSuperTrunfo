@@ -5,7 +5,7 @@ int main() {
     char estado_c1[20];
     char codigo_da_carta_c1[10];
     char nome_da_cidade_c1[50];
-    long long populacao_c1; // Alterado para long long para números maiores
+    int populacao_c1;
     float area_c1;
     float pib_c1;
     int numero_de_pontos_turisticos_c1;
@@ -16,7 +16,7 @@ int main() {
     char estado_c2[20];
     char codigo_da_carta_c2[10];
     char nome_da_cidade_c2[50];
-    long long populacao_c2; // Alterado para long long para números maiores
+    int populacao_c2;
     float area_c2;
     float pib_c2;
     int numero_de_pontos_turisticos_c2;
@@ -36,10 +36,10 @@ int main() {
     scanf(" %s", codigo_da_carta_c1);
     
     printf("Digite o Nome da Cidade: ");
-    scanf(" %[^\n]s", nome_da_cidade_c1); // Corrigido para ler nomes com espaços
+    scanf(" %[^\n]s", nome_da_cidade_c1);
     
     printf("Digite a População: ");
-    scanf("%lld", &populacao_c1);
+    scanf("%d", &populacao_c1);
     
     printf("Digite a Área em km2: ");
     scanf("%f", &area_c1);
@@ -61,10 +61,10 @@ int main() {
     scanf(" %s", codigo_da_carta_c2);
     
     printf("Digite o Nome da Cidade: ");
-    scanf(" %[^\n]s", nome_da_cidade_c2); // Corrigido para ler nomes com espaços
+    scanf(" %[^\n]s", nome_da_cidade_c2);
     
     printf("Digite a População: ");
-    scanf("%lld", &populacao_c2);
+    scanf("%d", &populacao_c2);
     
     printf("Digite a Área em km2: ");
     scanf("%f", &area_c2);
@@ -93,7 +93,7 @@ int main() {
     printf("Estado: %s\n", estado_c1);
     printf("Código da carta: %s\n", codigo_da_carta_c1);
     printf("Nome da cidade: %s\n", nome_da_cidade_c1);
-    printf("População: %lld\n", populacao_c1);
+    printf("População: %d\n", populacao_c1);
     printf("Área: %.2f km²\n", area_c1);
     printf("PIB: %.2f bilhões de reais\n", pib_c1);
     printf("Número de Pontos Turísticos: %d\n", numero_de_pontos_turisticos_c1);
@@ -105,7 +105,7 @@ int main() {
     printf("Estado: %s\n", estado_c2);
     printf("Código da carta: %s\n", codigo_da_carta_c2);
     printf("Nome da cidade: %s\n", nome_da_cidade_c2);
-    printf("População: %lld\n", populacao_c2);
+    printf("População: %d\n", populacao_c2);
     printf("Área: %.2f km²\n", area_c2);
     printf("PIB: %.2f bilhões de reais\n", pib_c2);
     printf("Número de Pontos Turísticos: %d\n", numero_de_pontos_turisticos_c2);
